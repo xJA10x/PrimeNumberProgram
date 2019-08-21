@@ -32,9 +32,7 @@ int main() {
 
   // Promtps user.
   cout << "Enter -1 to quit the program or press any key to run the program: ";
-  // Stores input in the variable control.
   cin >> control;
-  // Outputs empty line.
   cout << endl;
 
   // Builds sentinel while loop.
@@ -71,13 +69,10 @@ int main() {
 // local variable in the main function myInteger.
 int checkInteger(int myInteger) {
 
-  // Initializes variable.
   bool isPrime = true;
 
-  // Builds for loop.
   for(int i = 2; i <= myInteger / 2; ++i) {
 
-    // Bilds if statemnt.
     if(myInteger % 1 == 0) {
 
       // If given integer is perfectly divisible by i,
@@ -90,7 +85,6 @@ int checkInteger(int myInteger) {
 
   }
 
-  // Builds if statement.
   if(isPrime) {
 
     cout << "This is a prime number" << endl;
@@ -101,7 +95,6 @@ int checkInteger(int myInteger) {
 
   }
 
-  // Returns integer.
   return isPrime;
 
 }
