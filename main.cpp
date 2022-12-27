@@ -9,7 +9,7 @@ integer is prime
   // A prime number is a positive integer that
   // in only divisible by 1 and itself.
 
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
 // Function prototype.
@@ -71,9 +71,15 @@ int checkInteger(int myInteger) {
 
   bool isPrime = true;
 
-  for(int i = 2; i <= myInteger / 2; ++i) {
 
-    if(myInteger % 1 == 0) {
+  if(myInteger==1){  
+    isPrime = false;
+  }
+
+
+  for(int i = 2; i <= sqrt(myInteger); ++i) {
+
+    if(myInteger % 1 == 0 ) {
 
       // If given integer is perfectly divisible by i,
       // then isPrime is set to false. As a result the
